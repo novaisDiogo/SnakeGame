@@ -8,6 +8,21 @@
     <script defer src="/scripts/script.js"></script>
 </head>
 <body>
-    <canvas id="snake" width="512" height="512"></canvas>
+    <div class="scores">
+        <h5>Melhor Pontuação</h5>
+        <div class="square">
+            <p id="betterScoreGame">0</p>
+        </div>
+        <h5>Pontuação</h5>
+        <div class="square">
+            <p id="ScoreNow">0</p>
+        </div>
+    </div>
+    <div class="game">
+        <h1>SNAKE GAME!</h1>
+        <canvas id="snake" width="512" height="512"></canvas>
+        <h1 class="h1GameOver" id="gameOver">Game Over</h1>
+        <button id="buttonStart" onclick="Start()">Iniciar</button>
+    </div>
 </body>
 </html>
